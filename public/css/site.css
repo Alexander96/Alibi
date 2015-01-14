@@ -1,60 +1,210 @@
-body {
-  padding-top: 80px;
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
 }
-.navbar-right .navbar-form input {
-  margin-right: 10px;
+html,body {
+    margin:0;
+    padding:0;
 }
-.navbar-right .navbar-form button {
-  margin-right: 10px;
+
+
+/* Extra options you might want to consider*/
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
 }
-.toast-top-right {
-  margin-top: 50px;
+fieldset,img { 
+    border:0;
 }
-.mid-page {
-  margin: 0 auto;
-  max-width: 500px;
+input{
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
 }
-.mid-login {
-  margin: 0 auto;
-  max-width: 410px;
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
 }
-.label-login {
-  margin-top: 5px;
+ol,ul {
+    list-style:none;
 }
-.invalid-pass {
-  color: #f00;
+caption,th {
+    text-align:left;
 }
-footer {
-  padding-left: 100px;
-  padding-right: 100px;
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
 }
-footer p {
-  border-top: 1px solid #808080;
-  padding-top: 10px;
+q:before,q:after {
+    content:'';
 }
-.image-container img {
-  width: 100%;
+abbr,acronym { 
+    border:0;
 }
-.song-li {
-  color: #f00;
+
+/* Site CSS */
+body{
+	font-family: "Times New Roman", Times, serif;
+	background-color: #f0f0f0;
+	color: #484848;
 }
-.song-li:hover {
-  text-decoration: underline;
-  color: #a30000;
-  cursor: pointer;
+.wrapper{
+	top:0;
+	display: block;
+	width: 1000px;
+	border: 1px solid #e1e1e1;
+	border-top: none;
+	margin: 0 auto;
+	background-color:#fff;
 }
-input.ng-dirty.ng-invalid {
-  border: 1px solid #f00;
+
+/* Head of the website */
+.head-left-side, .head-right-side{
+	display: inline-block;
+	width: 50%;
+	height: 150px;
+	overflow: hidden;
 }
-input.ng-dirty.ng-valid {
-  border: 1px solid #008000;
+.logo-container{
+	float: left;
+	height: 100%;
+	width: 65px;
+	padding-left: 70px;
 }
-.new-playlist:hover {
-  background-color: #c1c1c1;
+.logo-container img{
+	width: 100%;
 }
-.new-playlist:hover img {
-  cursor: pointer;
+.up-moto, .down-moto{
+	display: block;
+	width: 100%;
+	height: 80px;
 }
-.login-input {
-  max-width: 250px;
+.moto, .moto2{
+	display: inline-block;
+	float: right;
+	padding-right: 40px;
+	width: 300px;
+	font-size: 1.1em;
+	text-align: center;
+}
+.moto{
+	padding-top: 25px;
+}
+.moto2{
+	padding-top: 10px;
+}
+/* Navigation of the website */
+.nav{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #333333;
+}
+.nav li{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	vertical-align: center;
+}
+.nav li:nth-of-type(2){
+	width: 16%;
+}
+.nav li:nth-of-type(4){
+	width: 28%;
+}
+.nav li:nth-of-type(5){
+	width: 16%;
+}
+
+.nav li a{
+	display: block;
+	color: #fff;
+	line-height: 50px;
+	text-decoration: none;
+	height: 47px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 1.2em;
+}
+#company{
+	border-top: 3px solid #00aec2;
+}
+#company > a:hover{
+	background: #00aec2;
+}
+#services{
+	border-top: 3px solid #d88024;
+}
+#services a:hover{
+	background: #d88024;
+}
+#consultations{
+	border-top: 3px solid #479e4d;
+}
+#consultations a:hover{
+	background: #479e4d;
+}
+#clients{
+	border-top: 3px solid #764e8a;
+}
+#clients a:hover{
+	background: #764e8a;
+}
+#conditions{
+	border-top: 3px solid #c14741;
+}
+#conditions a:hover{
+	background: #c14741;
+}
+/* Content of the website */
+.content{
+	display: block;
+	padding: 10px 30px;
+}
+h2{
+	color: #000;
+	font-size: 1.1em;
+}
+.text, .text-citation{
+	color: #000;
+	padding: 5px;
+}
+.text-citation{
+	margin-left: 20px;
+}
+.more{
+	color: #000;
+	display: inline-block;
+	padding: 2px 5px;
+	border: 1px solid #e1e1e1;
+	border-radius: 8px;
+	background: #e1e1e1;
+	margin-bottom: 10px;
+}
+.more:hover{
+	cursor: pointer;
+	color: orange;
+}
+.more-content{
+	padding: 5px;
+	border: 1px solid #e1e1e1;
+	border-radius: 10px;
+	margin-left: 40px; 
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.price{
+	font-weight: 700;
+}
+.bottom-message{
+	margin-top: 5px;
+	border-top: 1px solid #000;
+	color: #000;
+	text-align: center;
+}
+footer p{
+	text-align: center;
 }

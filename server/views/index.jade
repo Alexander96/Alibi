@@ -1,10 +1,33 @@
 ﻿extends includes/layout
 block main-content
-    header
-        ul
-            li
-                a(href="#/") Home
-    div
+    div.wrapper
+        header
+            div.head-top
+                div.head-left-side
+                    div.logo-container
+                        img(src="/img/logo.png")
+                div.head-right-side
+                    div.up-moto
+                        p.moto 
+                            | Креативно
+                            br
+                            | проектиране
+                            br
+                            | на ситуации
+                    div.down-moto
+                        h2.moto2 Помагаме в пълна тишина!           
+
+            ul.nav
+                li(id="company")
+                    a(href="#/company") Компанията
+                li(id="services")
+                    a(href="#/services") Услуги
+                li(id="consultations")
+                    a(href="#/consultations") Консултации
+                li(id="clients")
+                    a(href="#/clients") Корпоративни клиенти
+                li(id="conditions")
+                    a(href="#/conditions") Условия
         div(ng-view)
-    footer
-        p.text-center &copy; Alibi BGs
+        footer
+            p.text-center &copy; Alibi BG

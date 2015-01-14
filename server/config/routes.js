@@ -4,6 +4,9 @@
                beautify: true,
         });
     });
+    app.get('/img/:img', function(req, res){
+        res.send('../../public/img/' + req.params.img);
+    });
     app.get('*', function (req, res) {
         res.render('index');
     });

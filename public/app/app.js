@@ -7,10 +7,10 @@ app.config(function($routeProvider){
             templateUrl : '/partials/main/home',
             controller: 'MainController'
         })
-        .when('/home', {
+        .when('/company', {
             templateUrl : '/partials/main/home',
             controller: 'MainController'  
         })
-        .otherwise({ redirectTo: '/home' });
+        .otherwise({ redirectTo: '/' });
 
 });
